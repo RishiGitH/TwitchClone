@@ -1,3 +1,5 @@
+# TwitchClone
+
 "In short this project is my attempt at a clone of the Twitch Tv android app."
 
 This is a personal project of mine which I am trying to fill two requirements. Firstly its my first fully fledged android app (Or attempt), so there is alot of learning, and secondly it is another project in which I can use the Twitch api again, and muck around with streaming video etc.
