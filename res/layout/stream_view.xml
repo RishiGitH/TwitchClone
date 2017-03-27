@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/streamItem_layout" 
+    android:layout_width="330dp"
+    android:layout_height="265dp"
+    android:background="@drawable/small_round_rectangle"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+    
+	    <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:background="@drawable/stream_top_rectangle" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-25dp">
+        
+        <TextView
+	           android:id="@+id/streamViews"
+	           android:layout_width="wrap_content"
+	           android:layout_height="match_parent"
+	           android:layout_marginLeft="0dp"
+	           android:textSize="16sp"
+	           android:textColor="@color/white"
+	           android:background="@color/green_shade"
+	           android:shadowColor="@color/normal_green"
+		       android:shadowDx="1"
+		       android:shadowDy="1"
+		       android:shadowRadius="2"
+	           android:text="Description" />
+        
+    </LinearLayout>
+    
+    <ImageView
+           android:id="@+id/streamImage_ScreenShot"
+           android:layout_width="320dp"
+           android:layout_height="180dp"
+           android:layout_marginTop="7dp"
+		   android:background="@color/black"
+           android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/stream_bottomDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/stream_bottom_rectangle"/>
+    
+    <TextView
+           android:id="@+id/streamName"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginBottom="0dp"
+           android:text="| Stream Name |"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:background="@color/transparent"
+           android:textSize="16sp" />      
+
+</LinearLayout>

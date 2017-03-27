@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<script src="./scripts/jquery.js"></script>
+  	<script src="./scripts/Twitch_Handler.js"></script>
+    
+    <script>
+		
+    	var urlSrc;
+    	var playerWidth;
+    	var playerHeight;
+    	
+    	var version = 3;
+    	
+    	//init_TwitchHandler(version);
+    	
+    	$(function()
+        {
+    		
+        	playerWidth = Android.getWidth();
+        	playerHeight = Android.getHeight();
+        	var channel = Android.getChannel()
+        	urlSrc = "http://www.twitch.tv/"+channel+"/embed";
+			console.log("App has called the jsFunction on load!")
+			var fullHtml = "<iframe id=mainPlayer type=\"text/html\" width="+playerWidth+" src="+urlSrc+" height="+playerHeight+" frameborder=\"0\"></iframe>";
+			$('#twitch_embed_player').html(fullHtml);
+		});
+        
+
+		
+
+	
+    
+    </script>
+  </head>
+  <body>
+    <div id="twitch_embed_player">
+    	
+    </div>
+  </body>
+</html>

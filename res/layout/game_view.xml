@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemView"
+    android:layout_width="282dp"
+    android:layout_height="468dp"
+    android:background="@drawable/round_rectangle"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <!-- Twitch tv returns boxart images at max size of 272x380 pixels -->
+	<RelativeLayout
+	    android:id="@+id/topDisplayLayout" 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp">
+	    <ImageView
+	        android:id="@+id/topCustomDisplay" 
+	        android:contentDescription="@string/custom_panel_desc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/custom_layer_list" />
+	</RelativeLayout>
+	<LinearLayout
+	    android:id="@+id/topTextDisplay"
+	    android:layout_width="wrap_content"
+	    android:layout_height="17dp"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="-47dp">
+	    <TextView
+	        android:id="@+id/gameViews"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="0dp"
+	        android:background="@color/green_shade"
+	        android:shadowColor="@color/normal_green"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="2"
+	        android:text="Description"
+	        android:textColor="@color/white" />
+	    
+	    <ImageView
+	        android:id="@+id/topTextSpacer"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:background="@color/transparent"/>
+	    
+	    <TextView
+	        android:id="@+id/gameChannels"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="0dp"
+	        android:layout_toRightOf="@+id/gameViews"
+	        android:background="@color/red_shade"
+	        android:shadowColor="@color/normal_red"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="2"
+	        android:text="Description"
+	        android:textColor="@color/white" />
+	</LinearLayout>
+    
+
+    <ImageView
+        android:id="@+id/gameImage"
+        android:layout_width="272dp"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="7dp"
+        android:background="@color/black"
+        android:src="@drawable/ic_launcher" />
+    
+    <ImageView
+        android:id="@+id/bottomDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/bottom_rectangle"/>
+    
+    <TextView
+        android:id="@+id/gameName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:text="| Game Name |"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

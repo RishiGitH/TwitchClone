@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors taken from Wiki: Web_Colors -->
+    <!-- @ https://en.wikipedia.org/wiki/Web_colors -->
+    <color name="purple">#333399</color>
+    <color name="dark_blue">#00308F</color>
+    <color name="red_shade">#CD5C5C</color> <!-- IndianRed -->
+    <color name="green_shade">#32CD32</color> <!-- LimeGreen -->
+    <color name="transparent">#00000000</color>
+    <color name="normal_green">#006400</color>	<!-- Green -->
+    <color name="normal_red">#DC143C</color> <!-- Crimson -->
+    <color name="normal_white">#FF000000</color> <!-- White -->
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        
+        
+        android:drawable="@drawable/right_rectangle_top"
+
+        />
+    
+    <item 
+        android:right="180dp"
+        android:drawable="@drawable/left_rectangle_top"
+
+        />
+    
+    <item android:right="80dp">
+        
+        <rotate
+            android:fromDegrees="-45"
+            android:toDegrees="-45"
+            android:pivotX="50%"
+            android:pivotY="50%" >
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="@color/green_shade" />
+                <size
+        			android:width="50dp"
+        			android:height="50dp" />
+            </shape>
+        </rotate>
+    </item>   
+    
+
+</layer-list>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_source"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/source"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_high"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/high"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_medium"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/medium"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_low"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/low"
+        android:visible="true"/>
+    <item
+        android:id="@+id/item_mobile"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/mobile"
+        android:visible="true"/>
+
+</menu>
